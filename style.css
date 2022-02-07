@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+
+.container{
+    background-color: hsl(216, 50%, 16%);
+    width: 360px;
+    margin: 7rem auto;
+    border-radius: 20px;
+    box-shadow: 0px 15px 40px -15px hsl(210, 50%, 1%);
+}
+.image{
+    position: relative;
+   
+}
+
+.cube{
+    width: 320px;
+    margin: 20px 20px 0 20px;
+    border-radius: 10px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    background-color: hsl(178, 100%, 50%);
+}
+
+.view{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(0, 255, 247, .3);
+    padding: 36.5%;
+    border-radius: 10px;
+}
+
+.image:hover .cube {
+    opacity: 0.3;
+}
+
+.image:hover .view{
+    opacity: 1;
+}
+
+.text{
+    margin: 0 20px
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:  hsl(178, 100%, 50%);
+}
+
+.calm{
+    font-size: 18px;
+    line-height: 1.6em;
+    font-weight: 300;
+    padding: 0;
+}
+
+.flex-item{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    /* flex-wrap: wrap;
+    justify-items: end;
+    box-sizing: border-box;   */
+    border-bottom: solid 1px hsl(216, 20%, 36%);
+    gap: 7rem;
+    padding-bottom: 5px; 
+}
+
+.eth{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.creation{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 20px 40px 20px;
+    padding-bottom: 15px;
+
+}
+.avatar{
+    width: 40px;
+    border: solid white 1px;
+    border-radius: 50px;
+}
+
+.folalu{
+    font-style: oblique;
+}
